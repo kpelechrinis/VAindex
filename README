@@ -1,0 +1,9 @@
+This repository includes data and code from our study: K. Pelechrinis and D. Wei, "VA-index: Quantifying Assortativity Patterns in Networks with Multidimensional Nodal Attributes"
+
+/Data
+
+
+/Code
+
+* generate_node_vectors.py: This scripts generates vector attributes for the nodes.  In particular, for every combination of variance, correlation and density of the covariance matrix, 16 different multinomial distributions are created and each of them is sampled 1500 times (as many times as the nodes of each type).
+* va_index_script.py: This script uses the vector attributes created with the script above to create a variety of networks with different assortativity levels.  It calculates the ground truth assortativity, the baseline assortativity as well as the standardized mean difference from step 3 of the VA-index (along with its p-value).  The networks are created internally from the script and stored in a temporary file (tmp.txt).  This file is deleted after each iteratio so if you want to keep the specific network you can just copy it to a local directory before deleting it.
