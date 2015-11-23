@@ -2,6 +2,8 @@ This repository includes data and code from our study: K. Pelechrinis and D. Wei
 
 /Data
 
+* The Gowalla dataset was provided to us by the authors of "Exploiting Place Features in Link Prediction on Location-based Social Networks" in SIGKDD 2011.  We cannot provide it directly, but it is available upon request from the authors. 
+
 
 /Code
 
